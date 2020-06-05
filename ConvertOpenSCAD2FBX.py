@@ -31,6 +31,8 @@ scene.render.resolution_x = 512
 scene.render.resolution_y = 512
 scene.render.resolution_percentage = 100
 
+f = open('Assets.md', 'w')
+
 for filename in os.listdir(stl_directory):
     if filename.endswith(".stl"):
         bpy.ops.object.select_all(action="SELECT")
@@ -78,3 +80,7 @@ for filename in os.listdir(stl_directory):
         bpy.context.scene.render.filepath = os.path.join(img_directory, os.path.splitext(filename)[0] + '.png')
         bpy.ops.render.render(write_still=True)
 
+        f.write('### ' + os.path.splitext(filename)[0] + '\n')
+        f.write('![alt text](https://github.com/3vilM33pl3/hexassets/blob/master/Images/'+ os.path.splitext(filename)[0] + '.png?raw=true)\n')
+
+f.close()
