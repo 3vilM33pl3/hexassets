@@ -1,5 +1,5 @@
 // resolution bezier curve
-deltat = 0.06;
+deltat = 0.02;
 
 // cubic bexier curve function
 function cubic_bezier(p0,p1,p2,p3) = [for (t=[0:deltat:1+deltat]) pow(1-t,3)*p0+3*pow((1-t),2)*t*p1+3*(1-t)*pow(t,2)*p2+pow(t,3)*p3];
