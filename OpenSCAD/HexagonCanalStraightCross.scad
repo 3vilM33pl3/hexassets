@@ -7,7 +7,7 @@ difference()
         circle(r=15, $fn=6);
     }
     
-    color("DogerBlue", 1.0)
+    color("Blue", 1.0)
     {
         // canal shape
         rotate([0,0,60])
@@ -17,7 +17,7 @@ difference()
         polygon(points=[[-4.75,4.01],[4.75,4.01],[2.5,2], [-2.5,2]]);
     }
     
-    color("DogerBlue", 1.0)
+    color("Blue", 1.0)
     {
         // canal shape
         translate([-22.5,-12.99,0])
@@ -26,7 +26,7 @@ difference()
         polygon(points=[[-4.75,4.01],[4.75,4.01],[2.5,2], [-2.5,2]]);
     }
     
-    color("DogerBlue", 1.0)
+    color("Blue", 1.0)
     {
         // canal shape
         rotate([0,0,60])
@@ -35,7 +35,7 @@ difference()
         polygon(points=[[-4.75,4.01],[4.75,4.01],[2.5,2], [-2.5,2]]);
     }
     
-    color("DogerBlue", 1.0)
+    color("Blue", 1.0)
     {
         // canal shape
         rotate([90,0,0])

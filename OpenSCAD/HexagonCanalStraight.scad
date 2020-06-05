@@ -7,7 +7,7 @@ difference()
         circle(r=15, $fn=6);
     }
     
-    color("DogerBlue", 1.0)
+    color("Blue", 1.0)
     {
         // canal shape
         rotate([90,0,0])
