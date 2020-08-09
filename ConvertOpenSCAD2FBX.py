@@ -1,11 +1,13 @@
 import os
 import bpy
 
-scad_directory= r'/home/olivier/Projects/Narrowboat/hexassets/OpenSCAD'
-stl_directory= r'/home/olivier/Projects/Narrowboat/hexassets/STL'
-fbx_directory= r'/home/olivier/Projects/Narrowboat/hexassets/FBX'
-blender_directory=r'/home/olivier/Projects/Narrowboat/hexassets/Blender'
-img_directory=r'/home/olivier/Projects/Narrowboat/hexassets/Images'
+currentDir = os.getcwd()
+
+scad_directory= currentDir + r'/OpenSCAD'
+stl_directory= currentDir + r'/STL'
+fbx_directory= currentDir + r'/FBX'
+blender_directory= currentDir + r'/Blender'
+img_directory= currentDir + r'/Images'
 
 # ----------------------------------------- Game isometric camera
 
