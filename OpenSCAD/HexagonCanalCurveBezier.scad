@@ -25,7 +25,7 @@ points_left = cubic_bezier(p10, p11, p12, p13);
 points_right = reverse(cubic_bezier(p20, p21, p22, p23));
 points = concat(points_left, points_right);
 
-
+rotate(a = [0, 0, -90])
 difference()
 {
     color("Peru", 1.0)
