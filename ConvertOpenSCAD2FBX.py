@@ -1,6 +1,12 @@
 import os
 import bpy
 
+scene = bpy.context.scene
+scene.render.resolution_x = 512
+scene.render.resolution_y = 512
+scene.render.resolution_percentage = 100
+
+
 currentDir = os.getcwd()
 
 scad_directory= currentDir + r'/OpenSCAD'
@@ -28,10 +34,6 @@ for filename in os.listdir(scad_directory):
     print(cmd)
     os.system(cmd)
 
-scene = bpy.context.scene
-scene.render.resolution_x = 512
-scene.render.resolution_y = 512
-scene.render.resolution_percentage = 100
 
 f = open('Assets.md', 'w')
 
